@@ -25,10 +25,8 @@
     # always loaded
     'data': [
         # 'security/ir.model.access.csv',
-        'views/views.xml',
         'views/torneo.xml',
         'views/tenista.xml',
-        'views/templates.xml',
         'informes/informe_torneo.xml',
     ],
     # only loaded in demonstration mode
