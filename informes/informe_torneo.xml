@@ -11,7 +11,6 @@
                             <th>Categoria torneo</th>
                             <th>Superficie torneo</th>
                             <th>Fecha torneo</th>
-                            <th>Participantes</th>
                         </tr>
                          <tr class="text-center">   
                             <td><span t-field="o.nombre_torneo" /></td>
@@ -20,7 +19,17 @@
                             <td><span t-field="o.fecha" /></td>
                             </tr>
                         </table>
-                    
+                        <h2>Participantes del torneo</h2>
+                        <table>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Ranking</th>
+                            </tr>
+                            <tr class="text-center">   
+                                <td><span t-field="o.tenistas.nombre_tenista" /></td>
+                                <td><span t-field="o.tenistas.ranking" /></td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </t>

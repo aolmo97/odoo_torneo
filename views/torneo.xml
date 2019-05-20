@@ -9,8 +9,8 @@
           <field name="categoria"/>
           <field name="superficie"/>
           <field name="fecha"/>
-          <!-- <field name="tenistas">
-          </field> -->
+          <field name="tenistas">
+          </field>
         </tree>
       </field>
     </record>
@@ -25,7 +25,7 @@
                 <field name="categoria"/>
                 <field name="superficie"/>
                 <field name="fecha"/>
-                 <!-- <field name="tenistas"/> -->
+                 <field name="tenistas"/>
             </group>
         </form>
       </field>
