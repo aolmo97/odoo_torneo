@@ -9,7 +9,7 @@ class torneo(models.Model):
     categoria = fields.Selection([("Primera","Primera"),("Segunda","Segunda")],required=True)
     superficie = fields.Selection([("100m","100m"),("400m","400m")],required=True)
     fecha=fields.Date(string="Fecha",required=True)
-    tenistas=fields.Many2one('torneo.tenista','nombre_tenista')
+    tenistas=fields.One2many('torneo.tenista','nombre_tenista')
 class tenista(models.Model):
     _name = 'torneo.tenista'
     _rec_name= 'nombre_tenista'
