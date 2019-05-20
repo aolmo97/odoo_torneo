@@ -1,5 +1,4 @@
 <odoo>
-    <data>
          <template id="torneo.torneo_template_report_template">
             <table t-foreach="doc" t-as="o">
                 <tr>
@@ -17,5 +16,4 @@
                 </tr>
             </table>
         </template>
-    </data>
 </odoo>
