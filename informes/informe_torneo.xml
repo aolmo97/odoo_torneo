@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="torneo.torneo_template_report_template">
-     <t t-call="report.html_container">
+        <template id="torneo.torneo_template_report_template">
+        <t t-call="report.html_container">
             <t t-foreach="docs" t-as="o">
-            <table >
-                <tr>
-                    <th>Nombre torneo</th>
-                    <th>Categoria torneo</th>
-                    <th>Superficie torneo</th>
-                    <th>Fecha torneo</th>
-                    <th>Participantes</th>
-                </tr>
-                <tr>
-                    <td><span t-field="o.nombre_torneo" /></td>
-                    <td><span t-field="o.categoria" /></td>
-                    <td><span t-field="o.superficie" /></td>
-                    <td><span t-field="o.fecha" /></td>
-                </tr>
-            </table>
+                <div class="page">
+                    <div class="instalaciones_asociadas">
+                        <table border='1' class="table table-bordered mt32">
+                        <tr>
+                           <th>Nombre torneo</th>
+                            <th>Categoria torneo</th>
+                            <th>Superficie torneo</th>
+                            <th>Fecha torneo</th>
+                            <th>Participantes</th>
+                        </tr>
+                         <tr class="text-center">   
+                            <td><span t-field="o.nombre_torneo" /></td>
+                            <td><span t-field="o.categoria" /></td>
+                            <td><span t-field="o.superficie" /></td>
+                            <td><span t-field="o.fecha" /></td>
+                            </tr>
+                        </table>
+                    
+                    </div>
+                </div>
             </t>
-         </t>   
-        </template>
+        </t>
+    </template>
 </odoo>
