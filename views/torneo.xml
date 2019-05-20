@@ -1,0 +1,53 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    
+    <record model="ir.ui.view" id="torneo.torneo_tree">
+      <field name="name">torneo.torneo_tree</field>
+      <field name="model">torneo.torneo</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre_torneo"/>
+          <field name="categoria"/>
+          <field name="superficie"/>
+          <field name="fecha"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="torneo.torneo_list_form">
+      <field name="name">torneo.torneo_list_form</field>
+      <field name="model">torneo.torneo</field>
+      <field name="arch" type="xml">
+        <form>
+            <group>
+                <field name="nombre_torneo"/>
+                <field name="categoria"/>
+                <field name="superficie"/>
+                <field name="fecha"/>
+            </group>
+        </form>
+      </field>
+    </record>
+    <!-- actions opening views on models -->
+    
+    <record model="ir.actions.act_window" id="torneo.action_torneo_window">
+      <field name="name">torneo.torneo_action</field>
+      <field name="res_model">torneo.torneo</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <!-- Top menu item -->
+    
+    <menuitem name="Menu" id="torneo.menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="Torneos" id="torneo.torneo" parent="torneo.menu_root" action="torneo.action_torneo_window"/>
+    
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="torneo.menu_1_list" parent="torneo.menu_1"
+              action="torneo.action_window"/>
+    <menuitem name="Server to list" id="torneo" parent="torneo.menu_2"
+              action="torneo.action_server"/>
+    -->
+  </data>
+</odoo>
