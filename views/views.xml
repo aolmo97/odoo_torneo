@@ -1,0 +1,59 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="torneo.list">
+      <field name="name">torneo list</field>
+      <field name="model">torneo.torneo</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="torneo.action_window">
+      <field name="name">torneo window</field>
+      <field name="res_model">torneo.torneo</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="torneo.action_server">
+      <field name="name">torneo server</field>
+      <field name="model_id" ref="model_torneo_torneo"/>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="torneo" id="torneo.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="torneo.menu_1" parent="torneo.menu_root"/>
+    <menuitem name="Menu 2" id="torneo.menu_2" parent="torneo.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="torneo.menu_1_list" parent="torneo.menu_1"
+              action="torneo.action_window"/>
+    <menuitem name="Server to list" id="torneo" parent="torneo.menu_2"
+              action="torneo.action_server"/>
+    -->
+  </data>
+</odoo>
