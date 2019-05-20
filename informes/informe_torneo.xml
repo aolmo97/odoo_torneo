@@ -1,6 +1,8 @@
 <odoo>
-         <template id="torneo.torneo_template_report_template">
-            <table t-foreach="doc" t-as="o">
+    <template id="torneo.torneo_template_report_template">
+     <t t-call="report.html_container">
+            <t t-foreach="docs" t-as="o">
+            <table >
                 <tr>
                     <th>Nombre torneo</th>
                     <th>Categoria torneo</th>
@@ -15,5 +17,7 @@
                     <td><span t-field="o.fecha" /></td>
                 </tr>
             </table>
+            </t>
+         </t>   
         </template>
 </odoo>
