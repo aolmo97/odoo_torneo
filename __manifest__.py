@@ -29,6 +29,7 @@
         'views/torneo.xml',
         'views/tenista.xml',
         'views/templates.xml',
+        'informes/informe_torneo.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
