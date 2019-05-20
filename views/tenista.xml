@@ -1,0 +1,41 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    
+    <record model="ir.ui.view" id="torneo.tenista_tree">
+      <field name="name">torneo.tenista_tree</field>
+      <field name="model">torneo.tenista</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nombre_tenista"/>
+          <field name="ranking"/>
+        </tree>
+      </field>
+    </record>
+    
+    <record model="ir.ui.view" id="torneo.tenista_list_form">
+      <field name="name">torneo.tenista_list_form</field>
+      <field name="model">torneo.tenista</field>
+      <field name="arch" type="xml">
+        <form>
+            <group>
+                  <field name="nombre_tenista"/>
+                  <field name="ranking"/>
+            </group>
+        </form>
+      </field>
+    </record>
+    <!-- actions opening views on models -->
+    
+    <record model="ir.actions.act_window" id="torneo.action_tenista_window">
+      <field name="name">torneo.tenista_action</field>
+      <field name="res_model">torneo.tenista</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    <!-- Top menu item -->
+    
+    <menuitem name="Menu" id="torneo.menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="Tenistas" id="torneo.tenista" parent="torneo.menu_root" action="torneo.action_tenista_window"/>
+  </data>
+</odoo>
