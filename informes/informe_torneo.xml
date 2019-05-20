@@ -20,16 +20,18 @@
                             </tr>
                         </table>
                         <h2>Participantes del torneo</h2>
-                        <table>
-                            <tr>
-                                <th>Nombre</th>
-                                <th>Ranking</th>
-                            </tr>
-                            <tr class="text-center">   
-                                <td><span t-field="o.tenistas.nombre_tenista" /></td>
-                                <td><span t-field="o.tenistas.ranking" /></td>
-                            </tr>
-                        </table>
+                        <t t-foreach="o.tenistas" t-as="t">
+                            <table>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Ranking</th>
+                                </tr>
+                                <tr class="text-center">   
+                                    <td><span t-field="t.nombre_tenista" /></td>
+                                    <td><span t-field="t.ranking" /></td>
+                                </tr>
+                            </table>
+                        </t>
                     </div>
                 </div>
             </t>
