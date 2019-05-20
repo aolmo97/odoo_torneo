@@ -11,6 +11,9 @@
           <field name="categoria"/>
           <field name="superficie"/>
           <field name="fecha"/>
+          <field name="tenistas">
+            <field name="nombre_tenista"/>
+          </field>
         </tree>
       </field>
     </record>
@@ -25,6 +28,7 @@
                 <field name="categoria"/>
                 <field name="superficie"/>
                 <field name="fecha"/>
+                 <field name="tenistas"/>
             </group>
         </form>
       </field>
