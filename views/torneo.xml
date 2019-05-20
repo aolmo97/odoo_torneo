@@ -52,5 +52,6 @@
     <menuitem name="Server to list" id="torneo" parent="torneo.menu_2"
               action="torneo.action_server"/>
     -->
+    <report id="torneo.torneo_template_report" name="torneo.torneo_template_report_template" file="torneo.torneo_template_report_template" model="torneo.torneo" report_type="qweb-pdf" menu="True"/>
   </data>
 </odoo>
