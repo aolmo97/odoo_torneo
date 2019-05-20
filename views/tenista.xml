@@ -10,7 +10,6 @@
           <field name="nombre_tenista"/>
           <field name="ranking"/>
           <field name="torneos">
-            <field name="nombre_torneo"/>
           </field>
         </tree>
       </field>

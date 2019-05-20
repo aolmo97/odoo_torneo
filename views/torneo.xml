@@ -12,7 +12,6 @@
           <field name="superficie"/>
           <field name="fecha"/>
           <field name="tenistas">
-            <field name="nombre_tenista"/>
           </field>
         </tree>
       </field>
