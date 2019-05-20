@@ -1,5 +1,5 @@
-<odoo>
-  <data>
+<!-- <odoo>
+  <data> -->
     <!-- explicit list view definition -->
     <!--
     <record model="ir.ui.view" id="torneo.list">
@@ -55,5 +55,5 @@
     <menuitem name="Server to list" id="torneo" parent="torneo.menu_2"
               action="torneo.action_server"/>
     -->
-  </data>
-</odoo>
+  <!-- </data>
+</odoo> -->

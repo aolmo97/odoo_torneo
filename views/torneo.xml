@@ -1,7 +1,5 @@
 <odoo>
   <data>
-    <!-- explicit list view definition -->
-    
     <record model="ir.ui.view" id="torneo.torneo_tree">
       <field name="name">torneo.torneo_tree</field>
       <field name="model">torneo.torneo</field>
@@ -43,7 +41,7 @@
     
     <menuitem name="Menu" id="torneo.menu_root"/>
     <!-- menu categories -->
-    <menuitem name="Torneos" id="torneo.torneo" parent="torneo.menu_root" action="torneo.action_torneo_window"/>
+    <menuitem name="Torneos" id="torneo.torneo" parent="torneo.menu_root" action="torneo.action_torneo_window" />
     
     <!-- actions -->
     <!--
@@ -52,6 +50,14 @@
     <menuitem name="Server to list" id="torneo" parent="torneo.menu_2"
               action="torneo.action_server"/>
     -->
-    <report id="torneo.torneo_template_report" name="torneo.torneo_template_report_template" file="torneo.torneo_template_report_template" model="torneo.torneo" report_type="qweb-pdf" menu="True"/>
+    <!-- <report id="torneo.torneo_template_report" name="torneo.torneo_template_report_template" file="torneo.torneo_template_report_template" model="torneo.torneo" report_type="qweb-pdf" menu="True"/> -->
+      <report id="torneo.torneo_template_report"
+        name="torneo.torneo_template_report_template"
+        file="torneo.torneo_template_report_template"
+        model="torneo.torneo"
+        report_type="qweb-pdf"
+        string="Listado de Torneos"
+        menu="True"/>
+  
   </data>
 </odoo>
