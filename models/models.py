@@ -16,6 +16,6 @@ class tenista(models.Model):
     _sql_constraints=[("id_tenista",'UNIQUE(ranking)',"Error ya existe un tenista con ese ranking")]
     nombre_tenista = fields.Char(string="Nombre del tenista",required=True)
     ranking=fields.Integer(string="Numero del ranking",required=True)
-    torneos=fields.Many2One('torneo.torneo','nombre_torneo')
+    torneos=fields.Many2one('torneo.torneo','nombre_torneo')
     #fecha=fields.Date(string="Fecha",required=True)    
 
