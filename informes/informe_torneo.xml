@@ -1,22 +1,21 @@
 <odoo>
     <data>
-         <template id="listing">
-        <!--   <ul> -->
-        <!--     <li t-foreach="objects" t-as="object"> -->
-        <!--       <a t-attf-href="#{ root }/objects/#{ object.id }"> -->
-        <!--         <t t-esc="object.display_name"/> -->
-        <!--       </a> -->
-        <!--     </li> -->
-        <!--   </ul> -->
-        <!-- </template> -->
-        <!-- <template id="object"> -->
-        <!--   <h1><t t-esc="object.display_name"/></h1> -->
-        <!--   <dl> -->
-        <!--     <t t-foreach="object._fields" t-as="field"> -->
-        <!--       <dt><t t-esc="field"/></dt> -->
-        <!--       <dd><t t-esc="object[field]"/></dd> -->
-        <!--     </t> -->
-        <!--   </dl> -->
+         <template id="torneo.torneo_template_report_template">
+            <table t-foreach="doc" t-as="o">
+                <tr>
+                    <th>Nombre torneo</th>
+                    <th>Categoria torneo</th>
+                    <th>Superficie torneo</th>
+                    <th>Fecha torneo</th>
+                    <th>Participantes</th>
+                </tr>
+                <tr>
+                    <td><span t-field="o.nombre_torneo" /></td>
+                    <td><span t-field="o.categoria" /></td>
+                    <td><span t-field="o.superficie" /></td>
+                    <td><span t-field="o.fecha" /></td>
+                </tr>
+            </table>
         </template>
     </data>
 </odoo>
